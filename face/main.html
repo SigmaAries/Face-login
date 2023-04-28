@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Face Recognition Demo</title>
+  <style>
+    #video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #canvas {
+      display: none;
+    }
+
+    #result {
+      font-size: 2em;
+      margin-top: 1em;
+    }
+
+    .success {
+      color: green;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Face Recognition Demo</h1>
+  <video id="video" playsinline></video>
+  <canvas id="canvas"></canvas>
+  <div id="result"></div>
+
+  <script src="/main.js"></script>
+
+  <script src="/dist/face-api.min.js"></script>
+</body>
+</html>
